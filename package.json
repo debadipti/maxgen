@@ -1,0 +1,11 @@
+{
+  "name": "maxgen",
+  "version": "1.0.0",
+  "description": "A minimal landing page of a tech hub MaxGen. This is a fictional website.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Debadipti Patra",
+  "license": "MIT"
+}
