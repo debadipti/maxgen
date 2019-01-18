@@ -193,7 +193,7 @@ footer .copy {
   padding: 1rem 0 0;
 }
 
-@media (max-width: 1010px) {
+@media (max-width: 1200px) {
   .wrapper {
     width: 90%;
   }
