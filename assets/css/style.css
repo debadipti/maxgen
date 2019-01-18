@@ -142,6 +142,9 @@ section.about .content {
 
 section.about .content p.secondary-title {
   line-height: 1.6;
+}
+
+section.about .content p.secondary-title:not(:last-child) {
   padding-bottom: 2.5rem;
 }
 
@@ -188,5 +191,183 @@ footer .copy {
   color: #555;
   font-size: 1.2rem;
   padding: 1rem 0 0;
+}
+
+@media (max-width: 1010px) {
+  .wrapper {
+    width: 90%;
+  }
+  .content {
+    max-width: 90%;
+  }
+  .content h1.title {
+    font-size: 2.1rem;
+  }
+  .content p.secondary-title {
+    font-size: 1.2rem;
+  }
+  header .brand {
+    font-size: 2.6rem;
+  }
+  header .showcase {
+    max-width: 80%;
+  }
+  header .showcase h1 {
+    font-size: 3rem;
+  }
+  header .showcase p {
+    font-size: 1.4rem;
+  }
+  section.clients .grid-icons,
+  section.industries .grid-icons {
+    -ms-grid-rows: (14rem)[2];
+    -ms-grid-columns: (1fr)[3];
+        grid-template: repeat(2, 14rem)/repeat(3, 1fr);
+  }
+  section.clients .grid-icons .grid svg,
+  section.industries .grid-icons .grid svg {
+    width: 2.8rem;
+  }
+  footer .wrapper .flex-row {
+    padding-bottom: 3rem;
+  }
+  footer .wrapper .flex-row .flex-box h2 {
+    font-size: 1.4rem;
+  }
+  footer .copy {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    width: 90%;
+  }
+  .button {
+    font-size: 0.9rem;
+    padding: 0.7rem 1.4rem;
+  }
+  section .wrapper .content {
+    max-width: 100%;
+  }
+  section .wrapper .content h1.title {
+    font-size: 2rem;
+  }
+  section .wrapper .content p.secondary-title {
+    font-size: 1.1rem;
+  }
+  header .brand {
+    font-size: 2.1rem;
+  }
+  header .showcase {
+    max-width: 85%;
+    padding: 3rem 0 3.5rem;
+  }
+  header .showcase h1 {
+    font-size: 2.4rem;
+    line-height: 1.4;
+  }
+  header .showcase p {
+    font-size: 1.2rem;
+  }
+  section.clients,
+  section.industries {
+    padding: 3rem 0;
+  }
+  section.clients .grid-icons,
+  section.industries .grid-icons {
+    -ms-grid-rows: (14rem)[2];
+    -ms-grid-columns: (1fr)[3];
+        grid-template: repeat(2, 14rem)/repeat(3, 1fr);
+  }
+  section.clients .grid-icons .grid svg,
+  section.industries .grid-icons .grid svg {
+    width: 2.6rem;
+  }
+  section.about {
+    padding: 3rem 0;
+  }
+  footer {
+    padding: 3rem 0;
+  }
+  footer .wrapper .flex-row {
+    padding-bottom: 2.8rem;
+  }
+  footer .wrapper .flex-row .flex-box h2 {
+    font-size: 1.3rem;
+  }
+  footer .wrapper .flex-row .flex-box p {
+    font-size: 1.1rem;
+  }
+  footer .copy {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    width: 95%;
+  }
+  section .wrapper .content {
+    max-width: 100%;
+  }
+  section .wrapper .content h1.title {
+    font-size: 1.8rem;
+  }
+  section .wrapper .content p.secondary-title {
+    font-size: 1rem;
+  }
+  header {
+    padding-top: 2rem;
+  }
+  header .brand {
+    font-size: 2rem;
+  }
+  header .showcase {
+    max-width: 100%;
+    padding: 4rem 0 4.5rem;
+  }
+  header .showcase h1 {
+    font-size: 2rem;
+  }
+  section.clients,
+  section.industries {
+    padding: 2rem 0;
+  }
+  section.clients .grid-icons,
+  section.industries .grid-icons {
+    -ms-grid-rows: (10rem)[3];
+    -ms-grid-columns: (1fr)[2];
+        grid-template: repeat(3, 10rem)/repeat(2, 1fr);
+  }
+  section.clients .grid-icons .grid svg,
+  section.industries .grid-icons .grid svg {
+    width: 2.1rem;
+  }
+  section.about {
+    padding: 2rem 0;
+  }
+  section.about .content p.secondary-title:not(:last-child) {
+    padding-bottom: 2rem;
+  }
+  footer {
+    padding: 2rem 0;
+  }
+  footer .wrapper .flex-row {
+    padding-bottom: 2rem;
+    display: block;
+  }
+  footer .wrapper .flex-row .flex-box:first-child {
+    padding-bottom: 2.5rem;
+  }
+  footer .wrapper .flex-row .flex-box h2 {
+    font-size: 1.2rem;
+  }
+  footer .wrapper .flex-row .flex-box p {
+    font-size: 1rem;
+  }
+  footer .copy {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

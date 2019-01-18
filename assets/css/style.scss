@@ -136,7 +136,9 @@ section.about {
     max-width: 95%;
     p.secondary-title {
       line-height: 1.6;
-      padding-bottom: 2.5rem;
+      &:not(:last-child) {
+        padding-bottom: 2.5rem;
+      }
     }
   }
 }
@@ -173,5 +175,204 @@ footer {
     color: #555;
     font-size: 1.2rem;
     padding: 1rem 0 0;
+  }
+}
+
+// media query @media max-1000px
+@media (max-width: 1010px) {
+  .wrapper {
+    width: 90%;
+  }
+  .content {
+    max-width: 90%;
+    h1.title {
+      font-size: 2.1rem;
+    }
+    p.secondary-title {
+      font-size: 1.2rem;
+    }
+  }
+  header {
+    .brand {
+      font-size: 2.6rem;
+    }
+    .showcase {
+      max-width: 80%;
+      h1 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 1.4rem;
+      }
+    }
+  }
+  section.clients,
+  section.industries {
+    .grid-icons {
+      grid-template: repeat(2, 14rem) / repeat(3, 1fr);
+      .grid {
+        svg {
+          width: 2.8rem;
+        }
+      }
+    }
+  }
+  footer {
+    .wrapper {
+      .flex-row {
+        padding-bottom: 3rem;
+        .flex-box {
+          h2 {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+    .copy {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+// media query @media max-768px
+@media (max-width: 768px) {
+  .wrapper {
+    width: 90%;
+  }
+  .button {
+    font-size: 0.9rem;
+    padding: 0.7rem 1.4rem;
+  }
+  section .wrapper .content {
+    max-width: 100%;
+    h1.title {
+      font-size: 2rem;
+    }
+    p.secondary-title {
+      font-size: 1.1rem;
+    }
+  }
+  header {
+    .brand {
+      font-size: 2.1rem;
+    }
+    .showcase {
+      max-width: 85%;
+      padding: 3rem 0 3.5rem;
+      h1 {
+        font-size: 2.4rem;
+        line-height: 1.4;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  section.clients,
+  section.industries {
+    padding: 3rem 0;
+    .grid-icons {
+      grid-template: repeat(2, 14rem) / repeat(3, 1fr);
+      .grid {
+        svg {
+          width: 2.6rem;
+        }
+      }
+    }
+  }
+  section.about {
+    padding: 3rem 0;
+  }
+  footer {
+    padding: 3rem 0;
+    .wrapper {
+      .flex-row {
+        padding-bottom: 2.8rem;
+        .flex-box {
+          h2 {
+            font-size: 1.3rem;
+          }
+          p {
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+    .copy {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+// media query @media max-480px(mobile)
+@media (max-width: 480px) {
+  .wrapper {
+    width: 95%;
+  }
+  section .wrapper .content {
+    max-width: 100%;
+    h1.title {
+      font-size: 1.8rem;
+    }
+    p.secondary-title {
+      font-size: 1rem;
+    }
+  }
+  header {
+    // min-height: 100vh;
+    padding-top: 2rem;
+    .brand {
+      font-size: 2rem;
+    }
+    .showcase {
+      max-width: 100%;
+      padding: 4rem 0 4.5rem;
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+  section.clients,
+  section.industries {
+    padding: 2rem 0;
+    .grid-icons {
+      grid-template: repeat(3, 10rem) / repeat(2, 1fr);
+      .grid {
+        svg {
+          width: 2.1rem;
+        }
+      }
+    }
+  }
+  section.about {
+    padding: 2rem 0;
+    .content {
+      p.secondary-title:not(:last-child) {
+        padding-bottom: 2rem;
+      }
+    }
+  }
+  footer {
+    padding: 2rem 0;
+    .wrapper {
+      .flex-row {
+        padding-bottom: 2rem;
+        display: block;
+        .flex-box {
+          &:first-child {
+            padding-bottom: 2.5rem;
+          }
+          h2 {
+            font-size: 1.2rem;
+          }
+          p {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+    .copy {
+      font-size: 1rem;
+    }
   }
 }
