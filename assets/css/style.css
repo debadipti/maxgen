@@ -23,12 +23,12 @@ body {
 }
 
 .accent {
-  color: #1556ff;
+  color: #1556ff !important;
 }
 
 .button {
   display: inline-block;
-  padding: 1rem 2rem;
+  padding: 1rem 1.7rem;
   color: #1556ff;
   font-size: 1.1rem;
   font-weight: 200;
@@ -47,14 +47,16 @@ a {
 .content h1.title {
   padding: 0.6rem 0 1.5rem;
   font-size: 2.2rem;
-  font-weight: 400;
+  font-weight: 500;
+  font-family: monospace;
 }
 
 .content p.secondary-title {
   padding: 0.6rem 0;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   line-height: 1.6;
   color: #f4f4f4;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .grid-icons {
@@ -81,27 +83,28 @@ a {
 }
 
 header {
-  min-height: 100vh;
-  padding-top: 4rem;
+  padding-top: 3rem;
 }
 
 header .brand {
   font-size: 2.8rem;
   font-weight: 600;
+  font-family: "Courier New", Courier, monospace;
 }
 
 header .showcase {
   max-width: 70%;
-  padding-top: 16vh;
+  padding: 5rem 0;
 }
 
 header .showcase h1 {
-  font-size: 4rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 3.5rem;
   font-weight: 400;
 }
 
 header .showcase p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 400;
   line-height: 1.6;
   color: #1556ff;
@@ -115,6 +118,75 @@ section.clients {
 }
 
 section.clients .content {
-  max-width: 70%;
+  max-width: 80%;
+}
+
+section.industries {
+  background-color: black;
+  min-height: 100vh;
+  padding: 4rem 0;
+}
+
+section.industries .content {
+  max-width: 80%;
+}
+
+section.about {
+  background-color: #1556ff;
+  padding: 4rem 0;
+}
+
+section.about .content {
+  max-width: 95%;
+}
+
+section.about .content p.secondary-title {
+  line-height: 1.6;
+  padding-bottom: 2.5rem;
+}
+
+footer {
+  background-color: black;
+  padding: 4rem 0;
+}
+
+footer .flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 4rem;
+}
+
+footer .flex-row .flex-box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+footer .flex-row .flex-box h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+footer .flex-row .flex-box p {
+  line-height: 1.6;
+  font-size: 1.2rem;
+}
+
+footer .flex-row .flex-box .email {
+  color: white;
+  padding: 0.2rem;
+  border-bottom: 2px solid #1556ff;
+  text-decoration: none;
+}
+
+footer .flex-row .flex-box .email:hover {
+  background-color: #001b62;
+}
+
+footer .copy {
+  color: #555;
+  font-size: 1.2rem;
+  padding: 1rem 0 0;
 }
 /*# sourceMappingURL=style.css.map */
